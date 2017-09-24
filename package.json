@@ -1,0 +1,25 @@
+{
+  "name": "featureops-javascript",
+  "version": "1.0.0",
+  "description": "Feature Ops JavaScript SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/featureops/featureops-javascript.git"
+  },
+  "keywords": [
+    "feature ops",
+    "feature ops sdk",
+    "feature flags",
+    "feature toggles"
+  ],
+  "author": "Feature Ops",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/featureops/featureops-javascript/issues"
+  },
+  "homepage": "https://github.com/featureops/featureops-javascript#readme"
+}
