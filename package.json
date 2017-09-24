@@ -18,7 +18,7 @@
     "feature toggles"
   ],
   "author": "Feature Ops",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/featureops/featureops-javascript/issues"
   },
