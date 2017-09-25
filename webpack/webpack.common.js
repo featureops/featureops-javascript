@@ -7,9 +7,16 @@ module.exports = {
         './src/index.js'
     ],
 
+    resolve: {
+        alias: {
+            'request$': 'xhr'
+        }
+    },
+
     module: {
         rules: [
             {
+                use: ['babel-loader'],
                 exclude: /node_modules/
             }
         ],

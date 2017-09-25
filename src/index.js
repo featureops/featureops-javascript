@@ -1,4 +1,9 @@
+const FeatureOps = require('./api.js');
 
-export default function(authKey, options) {
-    
-};
+if (typeof window === 'undefined') {
+}
+else {
+    window.FeatureOps = FeatureOps;
+}
+
+module.exports = FeatureOps;
