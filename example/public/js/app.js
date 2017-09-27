@@ -1,16 +1,20 @@
-var featureOps = FeatureOps('');
+var client = FeatureOps('{ENVIRONMENT AUTH KEY}');
 
-featureOps.init()
-    .then(function () {
-        featureOps.processFlag('FEATURE_A').then(function (isOn) {
-            if (isOn) {
-                console.log('Is On');
-            }
-            else {
-                console.log('Is Off');
-            }
-        });
+client.init().then(function () {
+
+    client.processFlag('{CODE TOKEN}').then(function (isOn) {
+        if (isOn) {
+
+        }
+        else {
+
+        }
     })
     .catch(function (error) {
-        console.error(error);
+
     });
+
+})
+.catch(function (error) {
+
+});

@@ -1,7 +1,8 @@
 {
-  "name": "featureops-javascript",
+  "name": "featureops",
   "version": "0.1.0",
   "description": "Official JavaScript (Client & Node.js) Library for the Feature Ops Web API",
+  "license": "MIT",
   "main": "/src/index.js",
   "scripts": {
     "dev": "webpack --env=dev",
@@ -13,12 +14,11 @@
   },
   "keywords": [
     "feature ops",
-    "feature ops sdk",
+    "client",
+    "sdk",
     "feature flags",
     "feature toggles"
   ],
-  "author": "Feature Ops",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/featureops/featureops-javascript/issues"
   },

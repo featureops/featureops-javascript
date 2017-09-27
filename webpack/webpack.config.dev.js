@@ -8,7 +8,7 @@ module.exports = function () {
 
         output: {
             path: path.join(__dirname, '../lib'),
-            filename: 'featureops.sdk.js'
+            filename: 'featureops.js'
         }
     })
 }
