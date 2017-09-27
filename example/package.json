@@ -11,7 +11,6 @@
   "homepage": "https://github.com/featureops/featureops-javascript#readme",
   "dependencies": {
     "express": "^4.15.4",
-    "pug": "^2.0.0-rc.4",
-    "request": "^2.82.0"
+    "pug": "^2.0.0-rc.4"
   }
 }

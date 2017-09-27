@@ -7,12 +7,6 @@ module.exports = {
         './src/index.js'
     ],
 
-    resolve: {
-        alias: {
-            'request$': 'xhr'
-        }
-    },
-
     module: {
         rules: [
             {
