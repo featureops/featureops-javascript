@@ -19,7 +19,7 @@ The Feature Ops JavaScript Client SDK supports the following browsers:
 
 `$ npm install featureops`
 
-`import featureops from 'featureops'`
+`import featureops from 'featureops';`
 
 (The client is compatible with Browserify or Webpack.)
 
@@ -27,7 +27,7 @@ The Feature Ops JavaScript Client SDK supports the following browsers:
 
 The client can also be installed via a `script` tag:
 
-`<script src="https://app.featureops.com/featureops.min.js">`
+`<script src="https://app.featureops.com/featureops.min.js"></script>`
 
 ## Quick Start
 
@@ -61,4 +61,4 @@ The client can also be installed via a `script` tag:
 ```
 ## License
 
-[MIT License](https://github.com/featureops/featureops-javascript/blob/master/LICENSE.md)
+[MIT License](https://github.com/featureops/featureops-javascript/blob/master/LICENSE)
