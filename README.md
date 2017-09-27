@@ -18,6 +18,7 @@ The Feature Ops JavaScript Client SDK supports the following browsers:
 ### Client or Server
 
 `$ npm install featureops`
+
 `import featureops from 'featureops'`
 
 (The client is compatible with Browserify or Webpack.)
