@@ -1,7 +1,7 @@
 var client = FeatureOps('{ENVIRONMENT AUTH KEY}');
 
 client.init().then(function () {
-    client.processFlag('{CODE TOKEN}').then(function (isOn) {
+    client.evalFlag('{CODE TOKEN}').then(function (isOn) {
         if (isOn) {
             document.getElementById('feature').innerHTML = 'Feature Is On';
         }

@@ -10,7 +10,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static('public'))
 
 app.get("/", (req, res) => {
-    client.processFlag('{CODE TOKEN}').then(function (isOn) {
+    client.evalFlag('{CODE TOKEN}').then(function (isOn) {
         res.render("index", { status: 'Feature Is ' + (isOn ? 'On' : 'Off') });
     })
     .catch(function (error) { /* Take Error Action */ });

@@ -11,6 +11,6 @@
   "dependencies": {
     "express": "^4.15.4",
     "pug": "^2.0.0-rc.4",
-    "featureops": "^0.1.0"
+    "featureops": "^0.1.3"
   }
 }

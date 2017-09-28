@@ -25,9 +25,15 @@ The Feature Ops JavaScript Client SDK supports the following browsers:
 
 ### Client
 
-The client can also be installed via a `script` tag:
+The client can also be installed via a `script` tag.
+
+Production version:
 
 `<script src="https://app.featureops.com/featureops.min.js"></script>`
+
+Development version:
+
+`<script src="https://app.featureops.com/featureops.js"></script>`
 
 ## Quick Start
 
@@ -40,7 +46,7 @@ var client = FeatureOps('{ENVIRONMENT AUTH KEY}', options);
 client.init().then(function () {
     var targets = [ /* Optional array of target strings to evaluate feature against */];
 
-    client.processFlag('{CODE TOKEN}', targets).then(function (isOn) {
+    client.evalFlag('{CODE TOKEN}', targets).then(function (isOn) {
         if (isOn) {
             // Feature Is On
         }

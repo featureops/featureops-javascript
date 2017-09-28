@@ -56,7 +56,7 @@ module.exports = function (authKey, options) {
         });
     };
 
-    api.processFlag = function (codeToken, targets) {
+    api.evalFlag = function (codeToken, targets) {
         targets = targets ? targets : [];
         var isFlagFound = false;
         return new Promise(function (resolve, reject) {
