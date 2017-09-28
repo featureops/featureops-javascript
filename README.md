@@ -32,33 +32,27 @@ The client can also be installed via a `script` tag:
 ## Quick Start
 
 ```js
+var options = {
+    pollingInterval: 5 // number, in minutes, to refresh local feature flag cache, default is 5
+};
+var client = FeatureOps('{ENVIRONMENT AUTH KEY}', options);
 
-    var options = {
-        pollingInterval: 5 // number in minutes, default is 5
-    };
+client.init().then(function () {
+    var targets = [ /* Optional array of target strings to evaluate feature against */];
 
-    var client = FeatureOps('{ENVIRONMENT AUTH KEY}', options);
-
-    // Initialization of Feature Ops Client
-    client.init().then(function () {
-        // Upon succesful initilization, fetch feature flags settings
-        var targets = [ /* Optional array of target strings to evaluate feature against */];
-        client.processFlag('{CODE TOKEN}', targets).then(function (isOn) {
-            if (isOn) {
-                // Feature Is On
-            }
-            else {
-                // Feature Is Off
-            }
-        })
-        .catch(function (error) {
-            // Process Flag Error
-        });
+    client.processFlag('{CODE TOKEN}', targets).then(function (isOn) {
+        if (isOn) {
+            // Feature Is On
+        }
+        else {
+            // Feature Is Off
+        }
     })
-    .catch(function (error) {
-        // Initialization Error
-    });
+    .catch(function (error) { /* Take Error Action */ });
+})
+.catch(function (error) { /* Take Error Action */ });
 ```
+
 ## License
 
 [MIT License](https://github.com/featureops/featureops-javascript/blob/master/LICENSE)

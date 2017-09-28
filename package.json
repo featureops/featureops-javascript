@@ -1,6 +1,6 @@
 {
   "name": "featureops",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Official JavaScript (Client & Node.js) Library for the Feature Ops Web API",
   "license": "MIT",
   "main": "src/index.js",

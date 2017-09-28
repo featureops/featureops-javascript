@@ -1,20 +1,14 @@
 var client = FeatureOps('{ENVIRONMENT AUTH KEY}');
 
 client.init().then(function () {
-
     client.processFlag('{CODE TOKEN}').then(function (isOn) {
         if (isOn) {
-
+            document.getElementById('feature').innerHTML = 'Feature Is On';
         }
         else {
-
+            document.getElementById('feature').innerHTML = 'Feature Is Off';
         }
     })
-    .catch(function (error) {
-
-    });
-
+    .catch(function (error) { /* Take Error Action */ });
 })
-.catch(function (error) {
-
-});
+.catch(function (error) { /* Take Error Action */ });
