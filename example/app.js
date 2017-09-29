@@ -3,7 +3,7 @@ const app = express();
 const path = require('path');
 const featureops = require('featureops');
 
-var client = new featureops('{ENVIRONMENT AUTH KEY}');
+var client = featureops('{ENVIRONMENT AUTH KEY}');
 
 app.set("view engine", "pug");
 app.set("views", path.join(__dirname, "views"));

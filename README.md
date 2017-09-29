@@ -35,6 +35,8 @@ Development version:
 
 `<script src="https://app.featureops.com/featureops.js"></script>`
 
+(If you are using the client without Browserify or Webpack, `FeatureOps` will be accessible from the global.)
+
 ## Quick Start
 
 ```js
