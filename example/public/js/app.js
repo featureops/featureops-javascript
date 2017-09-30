@@ -1,4 +1,4 @@
-var client = FeatureOps('{ENVIRONMENT AUTH KEY}');
+var client = featureops('{ENVIRONMENT AUTH KEY}');
 
 client.init().then(function () {
     client.evalFlag('{CODE TOKEN}').then(function (isOn) {

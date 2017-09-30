@@ -1,9 +1,9 @@
-const FeatureOps = require('./api.js');
+const featureops = require('./api.js');
 
 if (typeof window === 'undefined') {
 }
 else {
-    window.FeatureOps = FeatureOps;
+    window.featureops = featureops;
 }
 
-module.exports = FeatureOps;
+module.exports = featureops;
