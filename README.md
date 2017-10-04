@@ -52,10 +52,10 @@ client.init().then(function () {
 
     client.evalFlag('{CODE_TOKEN}', targets).then(function (isOn) {
         if (isOn) {
-            // Feature Is On
+            /* Feature Is On */
         }
         else {
-            // Feature Is Off
+            /* Feature Is Off */
         }
     })
     .catch(function (error) { /* Take Error Action */ });
@@ -85,7 +85,7 @@ Returns a [`Promise`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Re
 
 ```js
 client.init().then(function () {
-    // Ready to go!
+    /* Ready to go! */
 })
 .catch(function (error) { /* Take Error/Fallback Action */ });
 ```
