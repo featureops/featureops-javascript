@@ -4,7 +4,7 @@ Official JavaScript (Client & Node.js) Library for the Feature Ops Web API
 ## Features
 - Provide (and evaluate) feature flags settings for the client and/or the server
 - Capture and store feature flag statistics within the Feature Ops application
-- Continue to serve feature flags if connectivty to Feature Ops goes down
+- Continue to serve feature flags if connectivity to Feature Ops goes down
 - Improve performance via feature flag caching
 
 ## Support
